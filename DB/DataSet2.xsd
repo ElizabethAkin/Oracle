@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.BD1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VAKANSIITableAdapter" GeneratorDataComponentClassName="VAKANSIITableAdapter" Name="VAKANSII" UserDataComponentName="VAKANSIITableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ELIZABETH.VAKANSII" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_TIMETABLE, ID_POSITION, NAME_POSITION, AMOUNT_POSITION, KILKIST_ZAYN_POS, KILKIST_VILN_POSAD FROM ELIZABETH.VAKANSII</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_TIMETABLE" DataSetColumn="ID_TIMETABLE" />
+              <Mapping SourceColumn="ID_POSITION" DataSetColumn="ID_POSITION" />
+              <Mapping SourceColumn="NAME_POSITION" DataSetColumn="NAME_POSITION" />
+              <Mapping SourceColumn="AMOUNT_POSITION" DataSetColumn="AMOUNT_POSITION" />
+              <Mapping SourceColumn="KILKIST_ZAYN_POS" DataSetColumn="KILKIST_ZAYN_POS" />
+              <Mapping SourceColumn="KILKIST_VILN_POSAD" DataSetColumn="KILKIST_VILN_POSAD" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VAKANSII" msprop:Generator_TableClassName="VAKANSIIDataTable" msprop:Generator_TableVarName="tableVAKANSII" msprop:Generator_TablePropName="VAKANSII" msprop:Generator_RowDeletingName="VAKANSIIRowDeleting" msprop:Generator_RowChangingName="VAKANSIIRowChanging" msprop:Generator_RowEvHandlerName="VAKANSIIRowChangeEventHandler" msprop:Generator_RowDeletedName="VAKANSIIRowDeleted" msprop:Generator_UserTableName="VAKANSII" msprop:Generator_RowChangedName="VAKANSIIRowChanged" msprop:Generator_RowEvArgName="VAKANSIIRowChangeEvent" msprop:Generator_RowClassName="VAKANSIIRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_TIMETABLE" msprop:Generator_ColumnVarNameInTable="columnID_TIMETABLE" msprop:Generator_ColumnPropNameInRow="ID_TIMETABLE" msprop:Generator_ColumnPropNameInTable="ID_TIMETABLEColumn" msprop:Generator_UserColumnName="ID_TIMETABLE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ID_POSITION" msprop:Generator_ColumnVarNameInTable="columnID_POSITION" msprop:Generator_ColumnPropNameInRow="ID_POSITION" msprop:Generator_ColumnPropNameInTable="ID_POSITIONColumn" msprop:Generator_UserColumnName="ID_POSITION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NAME_POSITION" msprop:Generator_ColumnVarNameInTable="columnNAME_POSITION" msprop:Generator_ColumnPropNameInRow="NAME_POSITION" msprop:Generator_ColumnPropNameInTable="NAME_POSITIONColumn" msprop:Generator_UserColumnName="NAME_POSITION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AMOUNT_POSITION" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_POSITION" msprop:Generator_ColumnPropNameInRow="AMOUNT_POSITION" msprop:Generator_ColumnPropNameInTable="AMOUNT_POSITIONColumn" msprop:Generator_UserColumnName="AMOUNT_POSITION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KILKIST_ZAYN_POS" msprop:Generator_ColumnVarNameInTable="columnKILKIST_ZAYN_POS" msprop:Generator_ColumnPropNameInRow="KILKIST_ZAYN_POS" msprop:Generator_ColumnPropNameInTable="KILKIST_ZAYN_POSColumn" msprop:Generator_UserColumnName="KILKIST_ZAYN_POS" type="xs:decimal" minOccurs="0" />
+              <xs:element name="KILKIST_VILN_POSAD" msprop:Generator_ColumnVarNameInTable="columnKILKIST_VILN_POSAD" msprop:Generator_ColumnPropNameInRow="KILKIST_VILN_POSAD" msprop:Generator_ColumnPropNameInTable="KILKIST_VILN_POSADColumn" msprop:Generator_UserColumnName="KILKIST_VILN_POSAD" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

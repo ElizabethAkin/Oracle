@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.BD1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VIEW1TableAdapter" GeneratorDataComponentClassName="VIEW1TableAdapter" Name="VIEW1" UserDataComponentName="VIEW1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ELIZABETH.VIEW1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID_K_A, NAME_OF_PERS, SURNAME_OF_PERS, AGE, ADDRESS_OF_PERS, TELEPHONE, E_MAIL, SALARY, AMOUNT_POSITION, NAME_POSITION, DATE_ACCEPT, DATE_FIRE FROM ELIZABETH.VIEW1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID_K_A" DataSetColumn="ID_K_A" />
+              <Mapping SourceColumn="NAME_OF_PERS" DataSetColumn="NAME_OF_PERS" />
+              <Mapping SourceColumn="SURNAME_OF_PERS" DataSetColumn="SURNAME_OF_PERS" />
+              <Mapping SourceColumn="AGE" DataSetColumn="AGE" />
+              <Mapping SourceColumn="ADDRESS_OF_PERS" DataSetColumn="ADDRESS_OF_PERS" />
+              <Mapping SourceColumn="TELEPHONE" DataSetColumn="TELEPHONE" />
+              <Mapping SourceColumn="E_MAIL" DataSetColumn="E_MAIL" />
+              <Mapping SourceColumn="SALARY" DataSetColumn="SALARY" />
+              <Mapping SourceColumn="AMOUNT_POSITION" DataSetColumn="AMOUNT_POSITION" />
+              <Mapping SourceColumn="NAME_POSITION" DataSetColumn="NAME_POSITION" />
+              <Mapping SourceColumn="DATE_ACCEPT" DataSetColumn="DATE_ACCEPT" />
+              <Mapping SourceColumn="DATE_FIRE" DataSetColumn="DATE_FIRE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VIEW1" msprop:Generator_TableClassName="VIEW1DataTable" msprop:Generator_TableVarName="tableVIEW1" msprop:Generator_TablePropName="VIEW1" msprop:Generator_RowDeletingName="VIEW1RowDeleting" msprop:Generator_RowChangingName="VIEW1RowChanging" msprop:Generator_RowEvHandlerName="VIEW1RowChangeEventHandler" msprop:Generator_RowDeletedName="VIEW1RowDeleted" msprop:Generator_UserTableName="VIEW1" msprop:Generator_RowChangedName="VIEW1RowChanged" msprop:Generator_RowEvArgName="VIEW1RowChangeEvent" msprop:Generator_RowClassName="VIEW1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID_K_A" msprop:Generator_ColumnVarNameInTable="columnID_K_A" msprop:Generator_ColumnPropNameInRow="ID_K_A" msprop:Generator_ColumnPropNameInTable="ID_K_AColumn" msprop:Generator_UserColumnName="ID_K_A" type="xs:decimal" />
+              <xs:element name="NAME_OF_PERS" msprop:Generator_ColumnVarNameInTable="columnNAME_OF_PERS" msprop:Generator_ColumnPropNameInRow="NAME_OF_PERS" msprop:Generator_ColumnPropNameInTable="NAME_OF_PERSColumn" msprop:Generator_UserColumnName="NAME_OF_PERS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURNAME_OF_PERS" msprop:Generator_ColumnVarNameInTable="columnSURNAME_OF_PERS" msprop:Generator_ColumnPropNameInRow="SURNAME_OF_PERS" msprop:Generator_ColumnPropNameInTable="SURNAME_OF_PERSColumn" msprop:Generator_UserColumnName="SURNAME_OF_PERS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AGE" msprop:Generator_ColumnVarNameInTable="columnAGE" msprop:Generator_ColumnPropNameInRow="AGE" msprop:Generator_ColumnPropNameInTable="AGEColumn" msprop:Generator_UserColumnName="AGE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ADDRESS_OF_PERS" msprop:Generator_ColumnVarNameInTable="columnADDRESS_OF_PERS" msprop:Generator_ColumnPropNameInRow="ADDRESS_OF_PERS" msprop:Generator_ColumnPropNameInTable="ADDRESS_OF_PERSColumn" msprop:Generator_UserColumnName="ADDRESS_OF_PERS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEPHONE" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE" msprop:Generator_ColumnPropNameInRow="TELEPHONE" msprop:Generator_ColumnPropNameInTable="TELEPHONEColumn" msprop:Generator_UserColumnName="TELEPHONE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="E_MAIL" msprop:Generator_ColumnVarNameInTable="columnE_MAIL" msprop:Generator_ColumnPropNameInRow="E_MAIL" msprop:Generator_ColumnPropNameInTable="E_MAILColumn" msprop:Generator_UserColumnName="E_MAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SALARY" msprop:Generator_ColumnVarNameInTable="columnSALARY" msprop:Generator_ColumnPropNameInRow="SALARY" msprop:Generator_ColumnPropNameInTable="SALARYColumn" msprop:Generator_UserColumnName="SALARY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AMOUNT_POSITION" msprop:Generator_ColumnVarNameInTable="columnAMOUNT_POSITION" msprop:Generator_ColumnPropNameInRow="AMOUNT_POSITION" msprop:Generator_ColumnPropNameInTable="AMOUNT_POSITIONColumn" msprop:Generator_UserColumnName="AMOUNT_POSITION" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NAME_POSITION" msprop:Generator_ColumnVarNameInTable="columnNAME_POSITION" msprop:Generator_ColumnPropNameInRow="NAME_POSITION" msprop:Generator_ColumnPropNameInTable="NAME_POSITIONColumn" msprop:Generator_UserColumnName="NAME_POSITION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DATE_ACCEPT" msprop:Generator_ColumnVarNameInTable="columnDATE_ACCEPT" msprop:Generator_ColumnPropNameInRow="DATE_ACCEPT" msprop:Generator_ColumnPropNameInTable="DATE_ACCEPTColumn" msprop:Generator_UserColumnName="DATE_ACCEPT" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DATE_FIRE" msprop:Generator_ColumnVarNameInTable="columnDATE_FIRE" msprop:Generator_ColumnPropNameInRow="DATE_FIRE" msprop:Generator_ColumnPropNameInTable="DATE_FIREColumn" msprop:Generator_UserColumnName="DATE_FIRE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

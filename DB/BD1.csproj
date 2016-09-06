@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3A8D498-B31A-427F-AC74-08EA7A81B1A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BD1</RootNamespace>
+    <AssemblyName>BD1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.DataAccess, Version=4.112.4.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BD\BD\bin\Debug\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_WORKER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_WORKER.Designer.cs">
+      <DependentUpon>ADD_WORKER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changep.Designer.cs">
+      <DependentUpon>changep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DATAIL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DATAIL.Designer.cs">
+      <DependentUpon>DATAIL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dovid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dovid.Designer.cs">
+      <DependentUpon>dovid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UPDATE.Designer.cs">
+      <DependentUpon>UPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FIRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIRE.Designer.cs">
+      <DependentUpon>FIRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_menu.Designer.cs">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="name_surname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="name_surname.Designer.cs">
+      <DependentUpon>name_surname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PERSONAL.Designer.cs">
+      <DependentUpon>PERSONAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporte.Designer.cs">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER.Designer.cs">
+      <DependentUpon>USER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vac.Designer.cs">
+      <DependentUpon>vac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VACA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VACA.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_WORKER.resx">
+      <DependentUpon>ADD_WORKER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changep.resx">
+      <DependentUpon>changep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DATAIL.resx">
+      <DependentUpon>DATAIL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dovid.resx">
+      <DependentUpon>dovid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UPDATE.resx">
+      <DependentUpon>UPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIRE.resx">
+      <DependentUpon>FIRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_menu.resx">
+      <DependentUpon>main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="name_surname.resx">
+      <DependentUpon>name_surname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PERSONAL.resx">
+      <DependentUpon>PERSONAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Reporte.resx">
+      <DependentUpon>Reporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER.resx">
+      <DependentUpon>USER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vac.resx">
+      <DependentUpon>vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\BD1.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\BD1.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OnChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQAgent.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQDequeueOptions.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQEnqueueOptions.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQMessage.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQMessageAvailableEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQMessageAvailableEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleAQQueue.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleBulkCopy.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleBulkCopyColumnMapping.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleBulkCopyColumnMappingCollection.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleClientFactory.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleCommand.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleCommandBuilder.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleConnection.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleConnectionStringBuilder.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleDataAdapter.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleDatabase.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleDataReader.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleDataSourceEnumerator.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleDependency.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleError.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleErrorCollection.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleException.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleFailoverEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleFailoverEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleGlobalization.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleHAEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleHAEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleInfoMessageEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleInfoMessageEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleNotificationEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleNotificationRequest.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleParameter.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleParameterCollection.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OraclePermission.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OraclePermissionAttribute.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowsCopiedEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowsCopiedEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowUpdatedEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowUpdatedEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowUpdatingEventArgs.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleRowUpdatingEventHandler.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleTransaction.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleXmlQueryProperties.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Client.OracleXmlSaveProperties.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.INullable.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.IOracleArrayTypeFactory.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.IOracleCustomType.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.IOracleCustomTypeFactory.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleArrayMappingAttribute.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleBFile.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleBinary.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleBlob.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleClob.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleCustomTypeMappingAttribute.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleDate.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleDecimal.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleIntervalDS.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleIntervalYM.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleNullValueException.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleObjectMappingAttribute.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleRef.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleRefCursor.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleString.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleTimeStamp.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleTimeStampLTZ.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleTimeStampTZ.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleTruncateException.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleTypeException.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleUdt.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleXmlStream.datasource" />
+    <None Include="Properties\DataSources\Oracle.DataAccess.Types.OracleXmlType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VACA.xsc">
+      <DependentUpon>VACA.xsd</DependentUpon>
+    </None>
+    <None Include="VACA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VACA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VACA.xss">
+      <DependentUpon>VACA.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

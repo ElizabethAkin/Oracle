@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="VACA" targetNamespace="http://tempuri.org/VACA.xsd" xmlns:mstns="http://tempuri.org/VACA.xsd" xmlns="http://tempuri.org/VACA.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" PropertyReference="ApplicationSettings.BD1.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PVACATIONTableAdapter" GeneratorDataComponentClassName="PVACATIONTableAdapter" Name="PVACATION" UserDataComponentName="PVACATIONTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ELIZABETH.PVACATION" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NAME_OF_PERS, SURNAME_OF_PERS, NAME_POSITION, ID_K_A FROM ELIZABETH.PVACATION</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NAME_OF_PERS" DataSetColumn="NAME_OF_PERS" />
+              <Mapping SourceColumn="SURNAME_OF_PERS" DataSetColumn="SURNAME_OF_PERS" />
+              <Mapping SourceColumn="NAME_POSITION" DataSetColumn="NAME_POSITION" />
+              <Mapping SourceColumn="ID_K_A" DataSetColumn="ID_K_A" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="VACA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VACA" msprop:Generator_UserDSName="VACA">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PVACATION" msprop:Generator_TableClassName="PVACATIONDataTable" msprop:Generator_TableVarName="tablePVACATION" msprop:Generator_TablePropName="PVACATION" msprop:Generator_RowDeletingName="PVACATIONRowDeleting" msprop:Generator_RowChangingName="PVACATIONRowChanging" msprop:Generator_RowEvHandlerName="PVACATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="PVACATIONRowDeleted" msprop:Generator_UserTableName="PVACATION" msprop:Generator_RowChangedName="PVACATIONRowChanged" msprop:Generator_RowEvArgName="PVACATIONRowChangeEvent" msprop:Generator_RowClassName="PVACATIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NAME_OF_PERS" msprop:Generator_ColumnVarNameInTable="columnNAME_OF_PERS" msprop:Generator_ColumnPropNameInRow="NAME_OF_PERS" msprop:Generator_ColumnPropNameInTable="NAME_OF_PERSColumn" msprop:Generator_UserColumnName="NAME_OF_PERS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SURNAME_OF_PERS" msprop:Generator_ColumnVarNameInTable="columnSURNAME_OF_PERS" msprop:Generator_ColumnPropNameInRow="SURNAME_OF_PERS" msprop:Generator_ColumnPropNameInTable="SURNAME_OF_PERSColumn" msprop:Generator_UserColumnName="SURNAME_OF_PERS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NAME_POSITION" msprop:Generator_ColumnVarNameInTable="columnNAME_POSITION" msprop:Generator_ColumnPropNameInRow="NAME_POSITION" msprop:Generator_ColumnPropNameInTable="NAME_POSITIONColumn" msprop:Generator_UserColumnName="NAME_POSITION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_K_A" msprop:Generator_ColumnVarNameInTable="columnID_K_A" msprop:Generator_ColumnPropNameInRow="ID_K_A" msprop:Generator_ColumnPropNameInTable="ID_K_AColumn" msprop:Generator_UserColumnName="ID_K_A" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
